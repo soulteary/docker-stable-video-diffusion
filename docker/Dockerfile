@@ -1,0 +1,5 @@
+FROM nvcr.io/nvidia/pytorch:23.12-py3
+RUN pip install transformers==4.35.2 gradio==4.13.0 diffusers==0.25.0 accelerate==0.25.0
+RUN pip install opencv-fixer==0.2.5
+RUN python -c "from opencv_fixer import AutoFix; AutoFix()"
+WORKDIR /app

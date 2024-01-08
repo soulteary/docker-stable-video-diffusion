@@ -1,1 +1,1 @@
-# docker-stable-video-diffusion
+# Docker Stable Video Diffusion
